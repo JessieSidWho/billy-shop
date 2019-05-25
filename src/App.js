@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import Location from './containers/Location';
+import BlackSmoke from './images/blacksmoke.jpg';
+// import Location from './containers/Location';
 
 function App() {
   return (
-    <>
+    <div style={{backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
       <Navbar/>
       <About/>
-      <Location/>
-    </>
+    </div>
   );
 }
 

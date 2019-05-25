@@ -38,7 +38,7 @@ class Location extends Component {
             }
             )
 
-        render(){
+       
         return (
             <div>
                 Hello
@@ -46,6 +46,6 @@ class Location extends Component {
         )   
        }
     }
-}
+
 
 export default Location;

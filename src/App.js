@@ -2,11 +2,11 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Map from './containers/Map';
-import BlackSmoke from './images/waves.jpeg';
+import BlackSmoke from './images/yellow.jpg';
 
 function App() {
   return (
-    <div style={{ backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+    <div style={{ backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', fontFamily: `Quicksand`, backgroundColor: `rgba(255,255,255,.3)` }}>
       <Navbar />
       <About />
       <div className='row justify-content-md-center text-center'>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='row justify-content-md-start mt-4 mb-5' style={{fontFamily: `Montserrat`}}>
+        <div className='row justify-content-md-start mt-5 pt-5 mb-5' style={{fontFamily: `Montserrat`}}>
 
             <div>
                

@@ -1,18 +1,22 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import './form.css';
+import { template, receiverEmail } from './../../config/keys';
 
 class Form extends Component {
     state = {
         name: '',
         email: '',
         product: '',
-        quanity: 0,
+        quantity: '',
         formSubmitted: false
     };
 
     handleCancel = this.handleCancel.bind(this);
-    handleChange = this.handleChange.bind(this);
+    handleName = this.handleName.bind(this);
+    handleEmail = this.handleEmail.bind(this);
+    handleProduct = this.handleProduct.bind(this);
+    handleQuantity = this.handleQuantity.bind(this);
     handleSubmit = this.handleSubmit.bind(this);
 
     static sender = 'c4u4less@gmail.com';
@@ -22,15 +26,30 @@ class Form extends Component {
             name: '',
             email: '',
             product: '',
-            quantity: 0
+            quantity: ''
         });
     }
 
-    handleChange(event) {
+    handleName(event) {
         this.setState({
-            name: event.target.value,
-            email: event.target.value,
-            product: event.target.value,
+            name: event.target.value
+        });
+    }
+
+    handleEmail(event) {
+        this.setState({
+            email: event.target.value
+        });
+    }
+
+    handleProduct(event) {
+        this.setState({
+            product: event.target.value
+        });
+    }
+
+    handleQuantity(event) {
+        this.setState({
             quantity: event.target.value
         });
     }
@@ -38,16 +57,11 @@ class Form extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        const {
-            REACT_APP_EMAILJS_RECEIVER: receiverEmail,
-            REACT_APP_EMAILJS_TEMPLATEID: template
-        } = this.props.env;
-
         this.sendFeedback(
             template,
             this.sender,
             receiverEmail,
-            this.state.feedback
+            this.state.props
         );
 
         this.setState({
@@ -55,9 +69,9 @@ class Form extends Component {
         });
     }
 
-    sendFeedback(templateId, senderEmail, receiverEmail, feedback) {
+    sendFeedback(template, senderEmail, receiverEmail, feedback) {
         window.emailjs
-            .send('gmail', templateId, {
+            .send('gmail', template, {
                 senderEmail,
                 receiverEmail,
                 feedback
@@ -73,10 +87,10 @@ class Form extends Component {
 
     render() {
         return (
-            <div className='row justify-content-md-center mt-5 mb-5 pb-5 pt-5'>
-                <div className='col-md-7'>
+            <div id='request' className='row justify-content-md-center mt-5 mb-5 pb-5 pt-5'>
+                <div className='col-md-7 mt-5'>
 
-                    <form id='request' className=" border border-secondary rounded-lg p-5" onSubmit={this.handleSubmit}>
+                    <form id='form' className=" border border-secondary rounded-lg p-5" onSubmit={this.handleSubmit}>
                         <h1 className='text-center'>Product Request</h1>
                         
                         <p>Name<br></br>
@@ -85,7 +99,7 @@ class Form extends Component {
                                 className=""
                                 id="nameInput"
                                 name="name"
-                                onChange={this.handleChange}
+                                onChange={this.handleName}
                                 placeholder="Name"
                                 required
                                 value={this.state.name}
@@ -96,7 +110,7 @@ class Form extends Component {
                                 className=""
                                 id="emailInput"
                                 name="email"
-                                onChange={this.handleChange}
+                                onChange={this.handleEmail}
                                 placeholder="Product Name"
                                 required
                                 value={this.state.email}
@@ -107,18 +121,18 @@ class Form extends Component {
                                 className=""
                                 id="productInput"
                                 name="product"
-                                onChange={this.handleChange}
+                                onChange={this.handleProduct}
                                 placeholder="Product Name"
                                 required
                                 value={this.state.product}
                             /></p>
                         <p>Quantity Requested<br></br>
                             <input
-                                type='number'
+                                type='text'
                                 className=""
                                 id="quantityInput"
                                 name="quantity"
-                                onChange={this.handleChange}
+                                onChange={this.handleQuantity}
                                 placeholder="Quantity"
                                 required
                                 value={this.state.quantity}
@@ -148,8 +162,5 @@ class Form extends Component {
     }
 }
 
-Form.propTypes = {
-    env: PropTypes.object.isRequired
-};
 
 export default Form;

@@ -7,7 +7,7 @@ import BlackSmoke from './images/yellow.jpg';
 
 function App() {
   return (
-    <div style={{ backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', fontFamily: `Quicksand`, backgroundColor: `rgba(255,255,255,.3)` }}>
+    <div id='about' style={{ backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', fontFamily: `Quicksand`, backgroundColor: `rgba(255,255,255,.3)` }}>
 
       <Navbar />
       <About />

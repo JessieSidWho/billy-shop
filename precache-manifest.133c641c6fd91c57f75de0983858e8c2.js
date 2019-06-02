@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8def9c1769ea29c58081ac492057be1b",
+    "revision": "98b64c91963805504f65dfb64ce4f8ee",
     "url": "/billy-shop/index.html"
   },
   {
-    "revision": "244cdaaed40775970e44",
+    "revision": "b73562c5c93297e6fc14",
     "url": "/billy-shop/static/css/main.bdd77379.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/billy-shop/static/js/2.bfe3a557.chunk.js"
   },
   {
-    "revision": "244cdaaed40775970e44",
-    "url": "/billy-shop/static/js/main.9e693d56.chunk.js"
+    "revision": "b73562c5c93297e6fc14",
+    "url": "/billy-shop/static/js/main.803dd91f.chunk.js"
   },
   {
     "revision": "c7ff34775ae90cfbbb7e",

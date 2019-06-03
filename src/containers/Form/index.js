@@ -31,10 +31,10 @@ class Form extends Component {
                             /></p>
                         <p>Phone Number<br></br>
                             <input
-                                type='email'
+                                type='phone'
                                 className="border border-secondary rounded-sm"
                                 id="phoneInput"
-                                name="email"
+                                name="phone"
                                 placeholder="Phone #"
                                 required
                             /></p>

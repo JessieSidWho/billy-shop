@@ -3,11 +3,11 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Map from './containers/Map';
 import Form from './containers/Form';
-import BlackSmoke from './images/yellow.jpg';
+// import BlackSmoke from './images/plant.jpeg';
 
 function App() {
   return (
-    <div id='about' style={{ backgroundImage: `URL(${BlackSmoke})`, backgroundPosition: 'center', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', fontFamily: `Quicksand`, backgroundColor: `rgba(255,255,255,.3)` }}>
+    <div id='about' style={{ fontFamily: `Quicksand` }}>
 
       <Navbar />
       <About />

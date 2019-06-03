@@ -1,7 +1,7 @@
 // import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import './form.css';
-import { template, receiverEmail } from './../../config/keys';
+import { template, userID } from './../../config/keys';
 
 class Form extends Component {
     state = {
@@ -57,25 +57,8 @@ class Form extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        this.sendFeedback(
-            template,
-            this.sender,
-            receiverEmail,
-            this.state.props
-        );
-
-        this.setState({
-            formSubmitted: true
-        });
-    }
-
-    sendFeedback(template, senderEmail, receiverEmail, feedback) {
         window.emailjs
-            .send('gmail', template, {
-                senderEmail,
-                receiverEmail,
-                feedback
-            })
+            .sendForm('gmail', template, '#request', userID)
             .then(res => {
                 this.setState({
                     formEmailSent: true
@@ -83,6 +66,10 @@ class Form extends Component {
             })
             // Handle errors here however you like
             .catch(err => console.error('Failed to send feedback. Error: ', err));
+
+        this.setState({
+            formSubmitted: true
+        });
     }
 
     render() {
@@ -90,13 +77,13 @@ class Form extends Component {
             <div id='request' className='row justify-content-md-center mt-5 mb-5 pb-5 pt-5'>
                 <div className='col-md-7 mt-5'>
 
-                    <form id='form' className=" border border-secondary rounded-lg p-5" onSubmit={this.handleSubmit}>
+                    <form id='form' className=" border border-secondary rounded-lg p-5" onSubmit={this.handleSubmit} style={{backgroundColor: `rgba(255,255,255,.9)`}}>
                         <h1 className='text-center'>Product Request</h1>
                         
                         <p>Name<br></br>
                             <input
                                 type='text'
-                                className=""
+                                className="border border-secondary rounded-sm"
                                 id="nameInput"
                                 name="name"
                                 onChange={this.handleName}
@@ -107,7 +94,7 @@ class Form extends Component {
                         <p>E-mail<br></br>
                             <input
                                 type='text'
-                                className=""
+                                className="border border-secondary rounded-sm"
                                 id="emailInput"
                                 name="email"
                                 onChange={this.handleEmail}
@@ -118,7 +105,7 @@ class Form extends Component {
                         <p>Product Request<br></br>
                             <input
                                 type='text'
-                                className=""
+                                className="border border-secondary rounded-sm"
                                 id="productInput"
                                 name="product"
                                 onChange={this.handleProduct}
@@ -129,7 +116,7 @@ class Form extends Component {
                         <p>Quantity Requested<br></br>
                             <input
                                 type='text'
-                                className=""
+                                className="border border-secondary rounded-sm"
                                 id="quantityInput"
                                 name="quantity"
                                 onChange={this.handleQuantity}

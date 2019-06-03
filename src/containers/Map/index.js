@@ -52,8 +52,46 @@ class Map extends Component {
           </div>
 
           <div className='col-md-5 text-center'>
-              <div className='m-5 border border-dark'>
+              <div className='m-5 pl-3 pr-3 pb-3 pt-2 border border-dark rounded-lg' style={{backgroundColor: `rgba(255,255,255,.9)`}}>
                 <h3>Hours</h3>
+                <table className='w-100'>
+                   <tbody className=''>
+                    <tr>
+                      <td className='text-right'><strong>Monday</strong></td> 
+                      <td className=''>9:00am - 7:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Tueday</strong></td> 
+                      <td>9:00am - 7:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Wednesday</strong></td> 
+                      <td>9:00am - 7:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Thursday</strong></td> 
+                      <td>9:00am - 7:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Friday</strong></td> 
+                      <td>9:00am - 7:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Saturday</strong></td> 
+                      <td>9:00am - 6:00pm</td>
+                    </tr>
+
+                    <tr>
+                      <td className='text-right'><strong>Sunday</strong></td> 
+                      <td>10:00am - 5:00pm</td>
+                    </tr>
+                    </tbody> 
+                </table>
 
               </div>
           </div>

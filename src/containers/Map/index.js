@@ -43,8 +43,8 @@ class Map extends Component {
 
   render() {
     return (
-      <div className='row justify-content-md-center' style={{ height: '400px', width: '100%' }}>
-          <div className='col-md-5 google-map ml-4'>
+      <div className='row justify-content-md-center'>
+          <div className='col-md-5 google-map' style={{ height: '400px', width: '100%' }}>
               <MyMapComponent
               isMarkerShown={this.state.isMarkerShown}
               onMarkerClick={this.handleMarkerClick}

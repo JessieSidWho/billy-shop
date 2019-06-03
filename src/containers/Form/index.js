@@ -75,7 +75,7 @@ class Form extends Component {
     render() {
         return (
             <div id='request' className='row justify-content-md-center mt-5 mb-5 pb-5 pt-5'>
-                <div className='col-md-7 mt-5'>
+                <div className='col-md-7 m-3 mt-5'>
 
                     <form id='form' className=" border border-secondary rounded-lg p-5" onSubmit={this.handleSubmit} style={{backgroundColor: `rgba(255,255,255,.9)`}}>
                         <h1 className='text-center'>Product Request</h1>

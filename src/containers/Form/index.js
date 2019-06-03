@@ -26,16 +26,16 @@ class Form extends Component {
                                 className="border border-secondary rounded-sm"
                                 id="emailInput"
                                 name="email"
-                                placeholder="Product Name"
+                                placeholder="E-mail"
                                 required
                             /></p>
-                        <p>Product Request<br></br>
+                        <p>Phone Number<br></br>
                             <input
-                                type='text'
+                                type='email'
                                 className="border border-secondary rounded-sm"
-                                id="productInput"
-                                name="product"
-                                placeholder="Product Name"
+                                id="phoneInput"
+                                name="email"
+                                placeholder="Phone #"
                                 required
                             /></p>
                         <p>Quantity Requested<br></br>
@@ -45,6 +45,15 @@ class Form extends Component {
                                 id="quantityInput"
                                 name="quantity"
                                 placeholder="Quantity"
+                                required
+                            /></p>
+                        <p>Product Request<br></br>
+                            <textarea
+                                type='text'
+                                className="border border-secondary rounded-sm"
+                                id="productInput"
+                                name="product"
+                                placeholder="Product Name and Description"
                                 required
                             /></p>
 

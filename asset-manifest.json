@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/billy-shop/static/css/main.bdd77379.chunk.css",
-    "main.js": "/billy-shop/static/js/main.a6870b90.chunk.js",
-    "main.js.map": "/billy-shop/static/js/main.a6870b90.chunk.js.map",
+    "main.js": "/billy-shop/static/js/main.2e70863b.chunk.js",
+    "main.js.map": "/billy-shop/static/js/main.2e70863b.chunk.js.map",
     "runtime~main.js": "/billy-shop/static/js/runtime~main.a2f7ea4c.js",
     "runtime~main.js.map": "/billy-shop/static/js/runtime~main.a2f7ea4c.js.map",
-    "static/js/2.66201b9b.chunk.js": "/billy-shop/static/js/2.66201b9b.chunk.js",
-    "static/js/2.66201b9b.chunk.js.map": "/billy-shop/static/js/2.66201b9b.chunk.js.map",
+    "static/js/2.80fbd158.chunk.js": "/billy-shop/static/js/2.80fbd158.chunk.js",
+    "static/js/2.80fbd158.chunk.js.map": "/billy-shop/static/js/2.80fbd158.chunk.js.map",
     "index.html": "/billy-shop/index.html",
-    "precache-manifest.0934cd41f5c18ab0e4070ac9797fcceb.js": "/billy-shop/precache-manifest.0934cd41f5c18ab0e4070ac9797fcceb.js",
+    "precache-manifest.4f492f1cc6120dcd5144dd20383669a0.js": "/billy-shop/precache-manifest.4f492f1cc6120dcd5144dd20383669a0.js",
     "service-worker.js": "/billy-shop/service-worker.js",
     "static/css/main.bdd77379.chunk.css.map": "/billy-shop/static/css/main.bdd77379.chunk.css.map"
   }

@@ -25,6 +25,7 @@ class Slides extends Component {
   
       return (
         <Carousel
+          className='mt-3'
           activeIndex={index}
           direction={direction}
           onSelect={this.handleSelect}

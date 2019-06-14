@@ -6,7 +6,7 @@ const Navbar = () => {
         <div>
             <nav className='row fixed-top justify-content-md-center' style={{background: `rgba(255,255,255,.9)`}}>
                 <div className='col-md-6 text-center'>
-                    <div className="text-dark" style={{ fontFamily: `Quicksand`, fontSize: `3.5vw` }}><i className="fas fa-store-alt mr-2"></i>Cigerettes4U4Less</div>
+                    <div className="text-dark" style={{ fontFamily: `Quicksand`, fontSize: `3.5vw` }}><i className="fas fa-store-alt mr-2"></i>Cigarettes4U4Less</div>
 
                     <div className="row navbar-expand-lg text-dark justify-content-md-end">
 

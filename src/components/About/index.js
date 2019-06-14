@@ -12,7 +12,7 @@ const About = () => {
                     <div className='col-md-9 border border-dark rounded-lg p-3 text-center' style={{backgroundColor: `rgba(255,255,255,.9)`}}>
                         <h3 className='p-2 pb-4'>Hello and Welcome!</h3>
                         <h5>A little bit About Us</h5>
-                        <p><strong>Cigerettes 4 U 4 Less</strong> is a privately owned Tobacco Shop conviently located in Palos Verde Plaza in Walnut Creek, CA. The shop is owned and operated by Billy S. as he has taken ownership since 2017.</p>
+                        <p><strong>Cigarettes 4 U 4 Less</strong> is a privately owned Tobacco Shop conviently located in Palos Verde Plaza in Walnut Creek, CA. The shop is owned and operated by Billy S. as he has taken ownership since 2017.</p>
                         <a className='btn btn-primary btn-block' href='tel:9259470809'><strong> Call Us</strong> <i className="fas fa-phone"></i></a>
                     </div>
                 </div>
